@@ -1,0 +1,106 @@
+extends layout
+block main 
+	main
+		section.main-block
+			.container
+				h1.title-page святой источник <br> Николая чудотворца
+				.main-block__video 
+					button#play
+						img(src=require('../images/youtube-play-button.svg'), alt='')
+					video#video(src=require("../images/video_2024-02-04_12-43-37.mp4") width="100%" height="auto" muted) 
+		section.advantages 
+			.container 
+				.advantages__wrap 
+					.advantages__item
+						p «ми́ру всему́ источа́яй многоце́нное ми́лости ми́ро и неисчерпа́емое чуде́с мо́ре»
+					.advantages__item
+						svg(width="40" height="40")
+							use(xlink:href="#icn1") 
+						.advantages__footer
+							span.advantages__name Троица
+							p Три ключа бьют из под каменного склона земли.
+					.advantages__item
+						svg(width="40" height="40")
+							use(xlink:href="#icn2") 
+						.advantages__footer
+							span.advantages__name Купальня
+							p Оборудованная купель в срубе позволяет полностью погрузится в воду.
+					.advantages__item
+						svg(width="40" height="40")
+							use(xlink:href="#icn3") 
+						.advantages__footer
+							span.advantages__name Умиротворение
+							p Необычайная тишина и душевное спокойствие.
+					.advantages__item
+						svg(width="40" height="40")
+							use(xlink:href="#icn4") 
+						.advantages__footer
+							span.advantages__name Вода
+							p Журчащие источники одной температуры в любое время года. Можно набрать святой воды.
+					.advantages__item
+						svg(width="40" height="40")
+							use(xlink:href="#icn5") 
+						.advantages__footer
+							span.advantages__name Статус
+							p Особо охраняемая территория историко-культурного значения
+					.advantages__item
+						svg(width="40" height="40")
+							use(xlink:href="#icn6") 
+						.advantages__footer
+							span.advantages__name Место
+							p Текст на 3-4 строки
+
+		include modules/info-block
+
+		section.location 
+			.container 
+				.section__head 
+					h2.section__title Как добраться до источника
+					p.section__subtitle Родник расположен на лесистом склоне берега реки Осетр, в 300 м западнее села<br> Городна городского округа Луховицы Московской области.
+				.location__wrap 
+					.location__content 
+						.location__item 
+							h3.location__name На общественном транспорте
+							p Из Москвы от метро «Выхино» доехать до Луховиц на автобусе номер 318 или с Казанского вокзала на автобусе номер 28 до станции «Луховицы» (135 км). Далее на автобусе номер 28 до села Городно 20км.
+						.location__item 
+							h3.location__name На личном транспорте
+							p Из Москвы по Новорязанскому шоссе, расстояние от МКАД 136 км. От горогода Луховицы через село Матыра подъезжаем к селу Городна, минуем его южную часть. У памятника воинам, погибшим в Великую Отечественную войну 1941-1945 гг., поворачиваем налево и двигаемся вниз 1,2 км вдоль дачных домов, где будет указатель «Святой источник - 800 м» и далее до родника.
+					.location__map 
+						img(src=require('../images/map.png'), alt='')
+
+		section.gallery
+			.container 
+				h2.section__title Галлерея святого источника
+				.gallery__wrap
+					.swiper.swiper-gallery
+						.swiper-wrapper 
+							.swiper-slide 
+								img(src=require('../images/image 5.jpg'), alt='')
+							.swiper-slide 
+								img(src=require('../images/image 6.jpg'), alt='')
+							.swiper-slide 
+								img(src=require('../images/image 5.jpg'), alt='')
+							.swiper-slide 
+								img(src=require('../images/image 6.jpg'), alt='')
+							.swiper-slide 
+								img(src=require('../images/image 5.jpg'), alt='')
+							.swiper-slide 
+								img(src=require('../images/image 6.jpg'), alt='')
+							.swiper-slide 
+								img(src=require('../images/image 5.jpg'), alt='')
+							.swiper-slide 
+								img(src=require('../images/image 6.jpg'), alt='')
+						.swiper-navigation 
+							.swiper-button-prev
+							.swiper-button-next
+						.swiper-pagination
+
+		section.location 
+			.container 
+				.section__head 
+					h2.section__title Что говорят посетители источника
+					p.section__subtitle Отзывы были использованы с Яндека и других сайтов-отзывов.
+				.reviews__wrap 
+
+		include modules/contacts
+		

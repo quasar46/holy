@@ -1,0 +1,26 @@
+.main-block__video {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        z-index: 10;
+        &.hidden {
+            opacity: 0;
+            z-index: -1;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+    }
+    @media(max-width: 767px) {
+        height: 467px;
+        video {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

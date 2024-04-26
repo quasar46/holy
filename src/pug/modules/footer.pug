@@ -1,0 +1,21 @@
+footer.footer
+	.container 
+		.footer__wrap 
+			.footer__side
+				img.footer__logo(src=require("../../images/footer-logo.svg"), alt="")
+				span.footer__copy ©️ Никольский источник, 2024 г
+			nav.nav-menu.nav-menu--footer 
+				a(href="index.html") Главная
+				a(href="about.html") О источнике
+				a(href="gallery.html") Галерея
+				a(href="contacts.html") Контакты
+			.footer__col 
+				button.btn Посетить источнике
+					svg(width="24" height="24")
+						use(xlink:href="#icn-plus")
+				span.footer__design design by polina_tomanofa
+
+include vectors
+#topScroll
+	svg(width="56" height="56")
+		use(xlink:href="#icn-top")

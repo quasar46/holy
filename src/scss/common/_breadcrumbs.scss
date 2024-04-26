@@ -1,0 +1,22 @@
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    flex-wrap: wrap;
+	color: var(--color-add);
+    a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--color-blue);
+        text-decoration: underline;
+        &::after {
+            content: "";
+            width: 24px;
+            height: 24px;
+            background-image: url("../images/arrow.svg");
+        }
+    }
+}

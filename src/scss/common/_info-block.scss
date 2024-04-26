@@ -1,0 +1,21 @@
+.info-block__wrap {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 24px;
+    @media (max-width: 1439px) {
+        gap: 17px;
+    }
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+.info-block__col {
+    p {
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+}

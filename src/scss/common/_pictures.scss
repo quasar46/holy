@@ -1,0 +1,14 @@
+.pictures {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+	margin-bottom: 40px;
+    img {
+        border-radius: 16px;
+		&.hidden {
+			opacity: 0;
+			visibility: hidden;
+			position: absolute;
+		}
+    }
+}

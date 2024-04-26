@@ -1,0 +1,41 @@
+extends layout
+block main 
+	main
+		.container 
+			.breadcrumbs 
+				a(href="index.html") Главная
+				span Галлерея 
+
+		section 
+			.container 
+				h2.section__title Фотографии святого <br> источника со всех сезонов
+				.pictures 
+					img(src=require('../images/image 10.jpg'), alt='')
+					img(src=require('../images/image 11.jpg'), alt='')
+					img(src=require('../images/image 19.jpg'), alt='')
+					img(src=require('../images/image 22.jpg'), alt='')
+					img(src=require('../images/image 20.jpg'), alt='')
+					img(src=require('../images/image 21.jpg'), alt='')
+					img(src=require('../images/image 10.jpg'), alt='')
+					img(src=require('../images/image 11.jpg'), alt='')
+					img(src=require('../images/image 19.jpg'), alt='')
+					img(src=require('../images/image 22.jpg'), alt='')
+					img(src=require('../images/image 20.jpg'), alt='')
+					img(src=require('../images/image 21.jpg'), alt='')
+					img(src=require('../images/image 10.jpg'), alt='')
+					img(src=require('../images/image 11.jpg'), alt='')
+					img(src=require('../images/image 19.jpg'), alt='')
+					img(src=require('../images/image 22.jpg'), alt='')
+					img(src=require('../images/image 20.jpg'), alt='')
+					img(src=require('../images/image 21.jpg'), alt='')
+					img(src=require('../images/image 10.jpg'), alt='')
+					img(src=require('../images/image 11.jpg'), alt='')
+					img(src=require('../images/image 19.jpg'), alt='')
+					img(src=require('../images/image 22.jpg'), alt='')
+					img(src=require('../images/image 20.jpg'), alt='')
+					img(src=require('../images/image 21.jpg'), alt='')
+				button.btn.btn--blue.m_auto#showMore Загрузить ещё
+					svg(width="24" height="24") 
+						use(xlink:href="#icn-plus")
+
+		include modules/contacts
